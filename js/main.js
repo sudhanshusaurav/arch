@@ -28,7 +28,6 @@ const slide_1 = document.querySelector("#slide__indicator-1");
 const slide_2 = document.querySelector("#slide__indicator-2");
 const slide_3 = document.querySelector("#slide__indicator-3");
 const slide_4 = document.querySelector("#slide__indicator-4");
-/* end hero slider */
 
 function changeSlide() {
   if (slide_1.classList.contains("indicator-active")) {
@@ -83,7 +82,7 @@ function changeSlide() {
   gsap.from(hero_h2, { xPercent: 100, duration: 1, ease: "elastic" });
   gsap.from(hero_p, { xPercent: -100, duration: 1, ease: "elastic" });
   gsap.from(hero_btn, {
-    yPercent: 100,
+    yPercent: -100,
     opacity: 0,
     duration: 1,
     ease: "elastic",
@@ -128,3 +127,37 @@ slide_btns.forEach((slide_btn) => {
     slider();
   });
 });
+
+/* end hero slider */
+
+/* team section */
+const team_img = document.querySelector("#team__img");
+
+if (sm.matches) {
+  team_img.src = "assets/home/mobile/image-small-team.jpg";
+} else if (md.matches) {
+  team_img.src = "assets/home/tablet/image-small-team.jpg";
+} else {
+  team_img.src = "assets/home/desktop/image-small-team.jpg";
+}
+/* end team section */
+
+/* features section */
+const feature_img1 = document.querySelector("#feature__img-1");
+const feature_img2 = document.querySelector("#feature__img-2");
+const feature_img3 = document.querySelector("#feature__img-3");
+
+if (sm.matches) {
+  feature_img1.src = "assets/portfolio/mobile/image-del-sol.jpg";
+  feature_img2.src = "assets/portfolio/mobile/image-228b.jpg";
+  feature_img3.src = "assets/portfolio/mobile/image-prototype.jpg";
+} else if (md.matches) {
+  feature_img1.src = "assets/portfolio/tablet/image-del-sol.jpg";
+  feature_img2.src = "assets/portfolio/tablet/image-228b.jpg";
+  feature_img3.src = "assets/portfolio/tablet/image-prototype.jpg";
+} else {
+  feature_img1.src = "assets/portfolio/desktop/image-del-sol.jpg";
+  feature_img2.src = "assets/portfolio/desktop/image-228b.jpg";
+  feature_img3.src = "assets/portfolio/desktop/image-prototype.jpg";
+}
+/* end features section */

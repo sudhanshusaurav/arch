@@ -53,4 +53,56 @@
 }
 /* end Display section */
 
+/* team section */
+.team {
+  margin: $m-l 0;
+  position: relative;
+  &__text {
+    position: absolute;
+    top: 50%;
+    left: 11.5rem;
+    transform: translateY(-50%);
+  }
+}
+/* end team section */
+
+/* features section */
+.features {
+  margin: $m-l 0;
+
+  &__content {
+    position: relative;
+
+    &__desc {
+      margin-top: 2.5rem;
+    }
+  }
+
+  .desc__image {
+    position: relative;
+
+    .feature__no {
+      position: absolute;
+      top: 10%;
+      right: 5%;
+    }
+
+    .feature__detail {
+      position: absolute;
+      bottom: 5%;
+      left: 10%;
+
+      a:hover {
+        color: $md-grey;
+      }
+    }
+  }
+  .featured__btn {
+    position: absolute;
+    top: 0;
+    right: 3.5%;
+  }
+}
+/* end features section */
+
 @import "main-responsive";
