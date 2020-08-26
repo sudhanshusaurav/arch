@@ -90,6 +90,7 @@ function changeSlide() {
     delay: 1,
   });
 }
+
 changeSlide();
 
 function activeSlide() {
