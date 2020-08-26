@@ -6,6 +6,7 @@
 
 .hero {
   position: relative;
+  margin-bottom: $m-l;
 
   &__text {
     position: absolute;
@@ -34,5 +35,22 @@
     }
   }
 }
+
+/* Display section */
+.display {
+  margin: $m-l 0;
+  &__content {
+    &__heading {
+      z-index: 5;
+      align-self: flex-start;
+    }
+
+    &__text {
+      padding-right: 7rem;
+      z-index: 10;
+    }
+  }
+}
+/* end Display section */
 
 @import "main-responsive";

@@ -91,16 +91,20 @@ a:focus {
   color: #1b1d23;
 }
 
-.text-light {
+.text-white {
   color: white;
 }
 
+.text-light {
+  color: #7d828f;
+}
+
 .text-lighter {
-  color: #eeeff4;
+  color: #c8ccd8;
 }
 
 .text-grey {
-  color: #7d828f;
+  color: #60636d;
 }
 
 .img-overlay-static {
@@ -112,7 +116,7 @@ a:focus {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgba(27, 29, 35, 0.3);
+  background: rgba(27, 29, 35, 0.5);
   right: 0;
   top: 0;
 }
@@ -304,6 +308,7 @@ a:focus {
 
 .hero {
   position: relative;
+  margin-bottom: 6.25rem;
 }
 
 .hero__text {
@@ -337,6 +342,23 @@ a:focus {
   color: white;
 }
 
+/* Display section */
+.display {
+  margin: 6.25rem 0;
+}
+
+.display__content__heading {
+  z-index: 5;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.display__content__text {
+  padding-right: 7rem;
+  z-index: 10;
+}
+
+/* end Display section */
 @media (max-width: 991.98px) {
   .hero__text {
     position: absolute;
@@ -352,6 +374,18 @@ a:focus {
   .hero .slide__indicator {
     display: none;
   }
+  /* Display section */
+  .display__content__heading h1 {
+    font-size: 5rem;
+    line-height: 10rem;
+  }
+  .display__content__text {
+    padding-right: 0;
+  }
+  .display__content__img {
+    display: none;
+  }
+  /* end Display section */
 }
 
 @media (max-width: 575.98px) {
@@ -368,16 +402,48 @@ a:focus {
     left: 50%;
     -webkit-transform: translateY(-50%) translateX(-50%);
             transform: translateY(-50%) translateX(-50%);
-    padding: 0 1rem;
+    padding: 0 2rem;
   }
-  .hero__text h2 {
+  .hero__text h1 {
     font-size: 2.25rem;
+    line-height: 3rem;
   }
-  .hero__text p {
+  .hero__text h3 {
     margin-bottom: 4.25rem;
   }
   .hero .slide__indicator {
     display: none;
   }
+  /* Display section */
+  .display__content {
+    position: relative;
+  }
+  .display__content__heading {
+    display: none;
+  }
+  .display__content__text {
+    padding-right: 0;
+  }
+  .display__content__text h2 {
+    font-size: 1.75rem;
+    font-weight: 600 !important;
+    line-height: 3rem;
+  }
+  .display__content__text p {
+    margin-top: 2.5rem;
+  }
+  .display__content__img {
+    display: none;
+  }
+  .display::before {
+    content: "";
+    width: 25%;
+    height: 2px;
+    background: #c8ccd8;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  /* end Display section */
 }
 /*# sourceMappingURL=main.css.map */

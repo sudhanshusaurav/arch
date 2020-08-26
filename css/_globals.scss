@@ -91,16 +91,20 @@ a:focus {
   color: $dark-blue;
 }
 
-.text-light {
+.text-white {
   color: white;
 }
 
+.text-light {
+  color: $md-grey;
+}
+
 .text-lighter {
-  color: $lighter-grey;
+  color: $light-grey;
 }
 
 .text-grey {
-  color: $md-grey;
+  color: $dark-grey;
 }
 
 .img-overlay-static {
@@ -111,7 +115,7 @@ a:focus {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: rgba($color: $dark-blue, $alpha: 0.3);
+    background: rgba($color: $dark-blue, $alpha: 0.5);
     right: 0;
     top: 0;
   }

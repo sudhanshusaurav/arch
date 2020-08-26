@@ -91,16 +91,20 @@ a:focus {
   color: #1b1d23;
 }
 
-.text-light {
+.text-white {
   color: white;
 }
 
+.text-light {
+  color: #7d828f;
+}
+
 .text-lighter {
-  color: #eeeff4;
+  color: #c8ccd8;
 }
 
 .text-grey {
-  color: #7d828f;
+  color: #60636d;
 }
 
 .img-overlay-static {
@@ -112,7 +116,7 @@ a:focus {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgba(27, 29, 35, 0.3);
+  background: rgba(27, 29, 35, 0.5);
   right: 0;
   top: 0;
 }
