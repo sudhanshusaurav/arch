@@ -1,0 +1,140 @@
+.header {
+  height: 9.5rem;
+  position: relative;
+
+  .menu {
+    height: 100%;
+    position: relative;
+
+    &__bar {
+      &__items {
+        list-style: none;
+        margin: 0 1rem;
+
+        .menu__links {
+          margin-left: 4.5rem;
+          color: $dark-grey;
+          transition: all 0.5s;
+
+          &:hover,
+          &:focus {
+            color: $dark-blue;
+          }
+        }
+        .active {
+          position: relative;
+          &::after {
+            content: "";
+            width: 1.5rem;
+            height: 2px;
+            background: $dark-blue;
+            position: absolute;
+            bottom: -0.5rem;
+            right: 0;
+          }
+        }
+      }
+    }
+  }
+  &__page {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 10rem;
+
+    &__title {
+      color: $md-grey;
+      text-transform: uppercase;
+      letter-spacing: 0.5rem;
+      transform: rotate(90deg);
+      margin-top: 12rem;
+      margin-left: 3rem;
+
+      &::before {
+        content: "";
+        width: 6.5rem;
+        height: 2px;
+        background: $md-grey;
+        position: absolute;
+        left: -10rem;
+        bottom: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+}
+
+@media (max-width: 991.98px) {
+  .header__page {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4rem;
+
+    &__title {
+      color: $md-grey;
+      text-transform: uppercase;
+      letter-spacing: 0.5rem;
+      transform: rotate(90deg);
+      margin-top: 11rem;
+      margin-left: 0;
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .header {
+    height: 6rem;
+  }
+  .header__page {
+    display: none;
+  }
+
+  .menu__bar {
+    position: absolute;
+
+    height: 14.5rem;
+    width: 90%;
+    top: 6rem;
+    right: 0;
+    z-index: 900;
+
+    &__items {
+      height: 100%;
+      width: 100%;
+      background: $lighter-grey;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+      pointer-events: none;
+      transition: all 0.5s;
+
+      &__open {
+        pointer-events: all;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      }
+    }
+  }
+
+  .active {
+    &::after {
+      display: none;
+    }
+  }
+
+  .menu__burger {
+    margin-left: auto;
+    cursor: pointer;
+    .line {
+      width: 25px;
+      height: 3px;
+      background: $dark-blue;
+      display: block;
+
+      &:nth-child(2) {
+        margin: 4px 0;
+      }
+    }
+  }
+}

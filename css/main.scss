@@ -1,0 +1,38 @@
+@import "variables";
+@import "globals";
+@import "mixins";
+@import "header";
+@import "footer";
+
+.hero {
+  position: relative;
+
+  &__text {
+    position: absolute;
+    top: 50%;
+    left: 11.5rem;
+    transform: translateY(-50%);
+
+    p {
+      margin-bottom: 4.25rem;
+    }
+  }
+  .slide__indicator {
+    position: absolute;
+    bottom: 0;
+    left: -4.3rem;
+    display: flex;
+
+    &__btn {
+      padding: 1.5rem 2rem;
+      display: block;
+    }
+
+    .indicator-active {
+      background: $dark-blue !important;
+      color: white;
+    }
+  }
+}
+
+@import "main-responsive";
