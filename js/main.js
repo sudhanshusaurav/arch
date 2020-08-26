@@ -110,9 +110,6 @@ function activeSlide() {
 
   changeSlide();
 }
-function resumeSlide() {
-  window.setTimeout(slider, 8000);
-}
 
 function slider() {
   sId = window.setInterval(activeSlide, 5000);
@@ -128,6 +125,6 @@ slide_btns.forEach((slide_btn) => {
     }
     this.classList.add("indicator-active");
     changeSlide();
-    resumeSlide();
+    slider();
   });
 });

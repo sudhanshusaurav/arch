@@ -23,6 +23,7 @@
     padding: 0 !important;
   }
   .hero {
+    overflow-x: hidden;
     &__text {
       position: absolute;
       top: 50%;

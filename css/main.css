@@ -251,6 +251,7 @@ a:focus {
     display: none;
   }
   .menu__bar {
+    overflow-x: hidden;
     position: absolute;
     height: 14.5rem;
     width: 90%;
@@ -357,6 +358,9 @@ a:focus {
   .container-sm-fluid {
     max-width: 100% !important;
     padding: 0 !important;
+  }
+  .hero {
+    overflow-x: hidden;
   }
   .hero__text {
     position: absolute;
