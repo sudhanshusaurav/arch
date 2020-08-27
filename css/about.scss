@@ -3,3 +3,78 @@
 @import "mixins";
 @import "header";
 @import "footer";
+
+.heritage {
+  margin: $m-l 0;
+  &__content {
+    &__text {
+      h2 {
+        margin-bottom: 5rem;
+      }
+      p {
+        margin: 1.5rem 0;
+        padding-right: 5rem;
+      }
+    }
+  }
+}
+
+/* leader section */
+.leader {
+  margin: $m-l 0;
+
+  .leaders {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 3rem;
+
+    &__desc {
+      position: relative;
+
+      &__links {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+
+        .leader__link {
+          margin: 0 1rem;
+          opacity: 0;
+          transition: all 0.5s;
+
+          &__open {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}
+/* end leader section */
+
+@media (max-width: 991.98px) {
+  .heritage__content {
+    &__text {
+      h2 {
+        margin-bottom: 2rem;
+      }
+      p {
+        padding-right: 0;
+      }
+    }
+
+    &__img {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .heritage__content {
+    &__text {
+      h2 {
+        font-weight: 700 !important;
+      }
+    }
+  }
+}

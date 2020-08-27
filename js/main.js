@@ -1,21 +1,7 @@
 /* media query */
-const lg = window.matchMedia("(max-width: 1199.98px)");
+
 const md = window.matchMedia("(max-width: 991.98px)");
 const sm = window.matchMedia("(max-width: 575.98px)");
-
-/* Navigation */
-
-const burger = document.querySelector(".menu__burger");
-const menu_items = document.querySelector(".menu__bar__items");
-
-burger.addEventListener("click", function () {
-  if (menu_items.classList.contains("menu__bar__items__open")) {
-    menu_items.classList.remove("menu__bar__items__open");
-  } else {
-    menu_items.classList.add("menu__bar__items__open");
-  }
-});
-/* end Navigation */
 
 /* hero slider */
 const hero_img = document.querySelector("#hero__slider__img");

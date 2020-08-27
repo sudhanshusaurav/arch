@@ -3,3 +3,9 @@
 @import "mixins";
 @import "header";
 @import "footer";
+
+.hero__content__text {
+  h1 {
+    letter-spacing: 0;
+  }
+}
