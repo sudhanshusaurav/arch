@@ -323,21 +323,20 @@ a:focus {
 }
 
 .footer__content {
-  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 8rem;
 }
 
-.footer__content .footer__btn {
-  position: absolute;
-  right: 3%;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-}
-
 .footer__logo {
-  position: relative;
   background: #1b1d23;
+  height: 100%;
+  width: 15%;
+  position: relative;
 }
 
 .footer__logo__svg {
@@ -349,51 +348,80 @@ a:focus {
 }
 
 .footer__links {
+  height: 100%;
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: #c8ccd8;
-  position: relative;
 }
 
 .footer__links a {
   color: #60636d;
-  margin-left: 3.5rem;
+  margin-left: 3rem;
+}
+
+.footer__btn {
+  margin-left: -3rem;
 }
 
 @media (max-width: 991.98px) {
-  .footer__links a {
-    margin-left: 1rem;
-  }
   .footer__btn {
-    right: 0 !important;
+    margin-left: -4rem;
   }
 }
 
 @media (max-width: 575.98px) {
-  .footer__btn {
-    position: static !important;
-    margin-left: 2rem;
-  }
-  .footer__logo {
-    width: 40%;
-    margin: 0 auto;
-    z-index: 10;
-  }
-  .footer__links {
-    height: 23rem !important;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  .footer__content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .footer__logo {
+    background: #1b1d23;
+    width: 40%;
+    position: relative;
+    margin-bottom: -4rem;
+    z-index: 10;
+  }
+  .footer__logo__svg {
+    height: 8rem;
+    width: 100%;
+    position: static;
+    margin-left: 1.5rem;
+    margin-top: 2rem;
+    -webkit-transform: translateY(0) translateX(0);
+            transform: translateY(0) translateX(0);
+  }
+  .footer__links {
+    height: 23.5rem;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    background: #c8ccd8;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
     padding: 5rem 0;
-    margin-top: -4rem;
+  }
+  .footer__links a {
+    margin: 1.5rem 0;
+  }
+  .footer__btn {
+    margin: 0 auto;
+    margin-top: -3rem;
   }
 }
 /*# sourceMappingURL=contact.css.map */
