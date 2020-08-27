@@ -147,3 +147,8 @@ if (sm.matches) {
   feature_img3.src = "assets/portfolio/desktop/image-prototype.jpg";
 }
 /* end features section */
+
+const scroll = new LocomotiveScroll({
+  el: document.querySelector(".scroll__linear"),
+  smooth: true,
+});

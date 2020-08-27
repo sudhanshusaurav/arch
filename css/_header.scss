@@ -130,11 +130,47 @@
     .line {
       width: 25px;
       height: 3px;
+      border-radius: 5px;
       background: $dark-blue;
       display: block;
+      position: relative;
+      transition: all 0.5s;
 
-      &:nth-child(2) {
-        margin: 4px 0;
+      &::before {
+        content: "";
+        width: 25px;
+        height: 3px;
+        border-radius: 5px;
+        background: $dark-blue;
+        position: absolute;
+        bottom: 7px;
+        right: 0;
+        transition: all 0.5s;
+      }
+
+      &::after {
+        content: "";
+        width: 25px;
+        height: 3px;
+        border-radius: 5px;
+        background: $dark-blue;
+        position: absolute;
+        top: 7px;
+        right: 0;
+        transition: all 0.5s;
+      }
+
+      &__open {
+        background: transparent;
+        &::before {
+          transform: rotate(45deg) translate(10px);
+          background: $dark-blue;
+        }
+
+        &::after {
+          transform: rotate(-45deg) translate(10px);
+          background: $dark-blue;
+        }
       }
     }
   }

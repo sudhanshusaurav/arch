@@ -159,6 +159,7 @@ a:focus {
 }
 
 .hero__ts .hero__content__text h1 {
+  color: #eeeff4;
   text-align: center;
   position: absolute;
   top: -7rem;
@@ -176,7 +177,7 @@ a:focus {
   content: "";
   width: 10%;
   height: 3px;
-  background: #c8ccd8;
+  background: #eeeff4;
   position: absolute;
   top: 20%;
   left: 11.5rem;
@@ -383,11 +384,49 @@ a:focus {
   .menu__burger .line {
     width: 25px;
     height: 3px;
+    border-radius: 5px;
     background: #1b1d23;
     display: block;
+    position: relative;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
   }
-  .menu__burger .line:nth-child(2) {
-    margin: 4px 0;
+  .menu__burger .line::before {
+    content: "";
+    width: 25px;
+    height: 3px;
+    border-radius: 5px;
+    background: #1b1d23;
+    position: absolute;
+    bottom: 7px;
+    right: 0;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  .menu__burger .line::after {
+    content: "";
+    width: 25px;
+    height: 3px;
+    border-radius: 5px;
+    background: #1b1d23;
+    position: absolute;
+    top: 7px;
+    right: 0;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  .menu__burger .line__open {
+    background: transparent;
+  }
+  .menu__burger .line__open::before {
+    -webkit-transform: rotate(45deg) translate(10px);
+            transform: rotate(45deg) translate(10px);
+    background: #1b1d23;
+  }
+  .menu__burger .line__open::after {
+    -webkit-transform: rotate(-45deg) translate(10px);
+            transform: rotate(-45deg) translate(10px);
+    background: #1b1d23;
   }
 }
 
@@ -500,5 +539,91 @@ a:focus {
 
 .hero__content__text h1 {
   letter-spacing: 0;
+}
+
+/* contact section */
+.contact {
+  margin: 6.25rem 0;
+}
+
+.contact__content__address td {
+  padding-left: 0;
+}
+
+/* end contact section */
+.map {
+  margin: 6.25rem 0;
+}
+
+/* connect section */
+.connect {
+  margin: 6.25rem 0;
+}
+
+.connect__content__form form {
+  position: relative;
+}
+
+.connect__content__form form .form-group input,
+.connect__content__form form .form-group textarea {
+  border: none;
+  border-bottom: 1px solid #60636d;
+  border-radius: 0;
+}
+
+.connect__content__form form .form-group input:focus,
+.connect__content__form form .form-group textarea:focus {
+  outline: none !important;
+  border: none !important;
+  border-bottom: 2px solid #1b1d23 !important;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.connect__content__form form .form-group .form-text {
+  visibility: hidden;
+}
+
+.connect__content__form form .form-btn {
+  position: absolute;
+  right: 0;
+  bottom: -3rem;
+  border: none;
+}
+
+/* end connect section */
+@media (max-width: 991.98px) {
+  /* contact section */
+  .contact {
+    margin: 6.25rem 0;
+  }
+  .contact__content__heading {
+    margin-bottom: 2rem;
+  }
+  .contact__content__address {
+    margin-bottom: 2rem;
+  }
+  .contact__content__address td {
+    padding-left: 0;
+  }
+  .contact__content__address .btn-map {
+    margin-left: 5rem;
+  }
+  /* end contact section */
+  form {
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .btn-map {
+    margin-left: 0 !important;
+  }
+  .contact__content__heading h2 {
+    font-weight: 700 !important;
+  }
+  .connect__content__heading h2 {
+    font-weight: 700 !important;
+  }
 }
 /*# sourceMappingURL=contact.css.map */

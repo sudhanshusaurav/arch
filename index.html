@@ -13,262 +13,242 @@
 
     <title>Arch Studio</title>
     <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.css"
+    />
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-    <!-- Header Section-->
-    <header class="header">
-      <nav class="menu">
-        <div class="container row align-items-center h-100">
-          <a href="/"><img src="assets/logo.svg" alt="logo" /></a>
-          <ul class="menu__bar m-0">
-            <li class="menu__bar__items">
-              <a href="portfolio.html" class="menu__links">Portfolio</a>
-              <a href="about.html" class="menu__links">About Us</a>
-              <a href="contact.html" class="menu__links">Contact</a>
-            </li>
-          </ul>
-          <div class="menu__burger">
-            <span class="line"></span>
-            <span class="line"></span>
-            <span class="line"></span>
+    <div class="scroll__linear">
+      <!-- Header Section-->
+      <header class="header">
+        <nav class="menu">
+          <div class="container row align-items-center h-100">
+            <a href="/"><img src="assets/logo.svg" alt="logo" /></a>
+            <ul class="menu__bar m-0">
+              <li class="menu__bar__items">
+                <a href="portfolio.html" class="menu__links">Portfolio</a>
+                <a href="about.html" class="menu__links">About Us</a>
+                <a href="contact.html" class="menu__links">Contact</a>
+              </li>
+            </ul>
+            <div class="menu__burger">
+              <span class="line"></span>
+            </div>
           </div>
+        </nav>
+        <div class="header__page">
+          <div class="header__page__title">Home</div>
         </div>
-      </nav>
-      <div class="header__page">
-        <div class="header__page__title">Home</div>
-      </div>
-    </header>
-    <!-- End Header Section-->
+      </header>
+      <!-- End Header Section-->
 
-    <!-- Hero Section -->
-    <div class="container container-sm-fluid">
-      <section class="hero">
-        <div class="img-overlay-static">
-          <img
-            src="assets/home/desktop/image-hero-paramour.jpg"
-            alt="hero-img"
-            class="w-100"
-            id="hero__slider__img"
-          />
-        </div>
-        <div class="row">
-          <div class="hero__text col-lg-6">
-            <h1 class="text-white font-weight-normal" id="hero__text__h2">
-              Project Paramour
-            </h1>
-            <h3 class="text-white font-weight-normal" id="hero__text__p">
-              Project made for an art museum near Southwest London. Project
-              Paramour is a statement of bold, modern architecture.
-            </h3>
-            <a href="#" class="btn-dark" id="hero__btn"
-              >See Our Portfolio &nbsp;
-              <span
-                ><svg xmlns="http://www.w3.org/2000/svg" width="26" height="20">
-                  <g
-                    id="hero__arrow"
-                    fill="none"
-                    fill-rule="evenodd"
-                    stroke="#fff"
-                    stroke-width="2"
-                  >
-                    <path d="M15 1l9 9-9 9M0 10h24" />
-                  </g></svg></span
-            ></a>
+      <!-- Hero Section -->
+      <div class="container container-sm-fluid">
+        <section class="hero">
+          <div class="img-overlay-static">
+            <img
+              src="assets/home/desktop/image-hero-paramour.jpg"
+              alt="hero-img"
+              class="w-100"
+              id="hero__slider__img"
+            />
           </div>
-        </div>
-        <div class="slide__indicator">
-          <span
-            id="slide__indicator-1"
-            class="slide__indicator__btn btn-light indicator-active"
-            >1</span
-          >
-          <span id="slide__indicator-2" class="slide__indicator__btn btn-light"
-            >2</span
-          >
-          <span id="slide__indicator-3" class="slide__indicator__btn btn-light"
-            >3</span
-          >
-          <span id="slide__indicator-4" class="slide__indicator__btn btn-light"
-            >4</span
-          >
+          <div class="row">
+            <div class="hero__text col-lg-6">
+              <h1 class="text-white font-weight-normal" id="hero__text__h2">
+                Project Paramour
+              </h1>
+              <h3 class="text-white font-weight-normal" id="hero__text__p">
+                Project made for an art museum near Southwest London. Project
+                Paramour is a statement of bold, modern architecture.
+              </h3>
+              <a href="#" class="btn-dark" id="hero__btn"
+                >See Our Portfolio &nbsp;
+                <span
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="26"
+                    height="20"
+                  >
+                    <g
+                      id="hero__arrow"
+                      fill="none"
+                      fill-rule="evenodd"
+                      stroke="#fff"
+                      stroke-width="2"
+                    >
+                      <path d="M15 1l9 9-9 9M0 10h24" />
+                    </g></svg></span
+              ></a>
+            </div>
+          </div>
+          <div class="slide__indicator">
+            <span
+              id="slide__indicator-1"
+              class="slide__indicator__btn btn-light indicator-active"
+              >1</span
+            >
+            <span
+              id="slide__indicator-2"
+              class="slide__indicator__btn btn-light"
+              >2</span
+            >
+            <span
+              id="slide__indicator-3"
+              class="slide__indicator__btn btn-light"
+              >3</span
+            >
+            <span
+              id="slide__indicator-4"
+              class="slide__indicator__btn btn-light"
+              >4</span
+            >
+          </div>
+        </section>
+      </div>
+      <!-- End Hero Section -->
+
+      <!-- Display Section -->
+      <section class="display">
+        <div class="container">
+          <div class="display__content row align-items-end">
+            <div class="col-lg-2 display__content__heading">
+              <h1 class="h1-l font-weight-normal text-lighter">Welcome</h1>
+            </div>
+            <div class="col-lg-6 display__content__text">
+              <h2 class="font-weight-normal">Welcome to Arch Studio</h2>
+              <p>
+                We have a unique network and skillset to help bring your
+                projects to life. Our small team of highly skilled individuals
+                combined with our large network put us in a strong position to
+                deliver exceptional results.
+              </p>
+              <p>
+                Over the past 10 years, we have worked on all kinds of projects.
+                From stations to high-rise buildings, we create spaces that
+                inspire and delight.
+              </p>
+              <p>
+                We work closely with our clients so that we understand the
+                intricacies of each project. This allows us to work in harmony
+                the surrounding area to create truly stunning projects that will
+                stand the test of time.
+              </p>
+            </div>
+            <div class="col-lg-4 display__content__img">
+              <img src="assets/home/desktop/image-welcome.jpg" alt="welcome" />
+            </div>
+          </div>
         </div>
       </section>
-    </div>
-    <!-- End Hero Section -->
+      <!-- End Display Section -->
 
-    <!-- Display Section -->
-    <section class="display">
-      <div class="container">
-        <div class="display__content row align-items-end">
-          <div class="col-lg-2 display__content__heading">
-            <h1 class="h1-l font-weight-normal text-lighter">Welcome</h1>
+      <!-- Team Section -->
+      <section class="team">
+        <div class="container container-sm-fluid">
+          <div class="img-overlay-static">
+            <img
+              src="assets/home/desktop/image-small-team.jpg"
+              alt="team"
+              class="w-100"
+              id="team__img"
+            />
           </div>
-          <div class="col-lg-6 display__content__text">
-            <h2 class="font-weight-normal">Welcome to Arch Studio</h2>
-            <p>
-              We have a unique network and skillset to help bring your projects
-              to life. Our small team of highly skilled individuals combined
-              with our large network put us in a strong position to deliver
-              exceptional results.
-            </p>
-            <p>
-              Over the past 10 years, we have worked on all kinds of projects.
-              From stations to high-rise buildings, we create spaces that
-              inspire and delight.
-            </p>
-            <p>
-              We work closely with our clients so that we understand the
-              intricacies of each project. This allows us to work in harmony the
-              surrounding area to create truly stunning projects that will stand
-              the test of time.
-            </p>
-          </div>
-          <div class="col-lg-4 display__content__img">
-            <img src="assets/home/desktop/image-welcome.jpg" alt="welcome" />
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End Display Section -->
-
-    <!-- Team Section -->
-    <section class="team">
-      <div class="container container-sm-fluid">
-        <div class="img-overlay-static">
-          <img
-            src="assets/home/desktop/image-small-team.jpg"
-            alt="team"
-            class="w-100"
-            id="team__img"
-          />
-        </div>
-        <div class="row">
-          <div class="team__text col-md-8 col-lg-5">
-            <h2 class="text-white font-weight-normal">Small team, big ideas</h2>
-            <a href="#" class="btn-dark mt-5">
-              About Us &nbsp;
-              <span
-                ><svg xmlns="http://www.w3.org/2000/svg" width="26" height="20">
-                  <g
-                    id="hero__arrow"
-                    fill="none"
-                    fill-rule="evenodd"
-                    stroke="#fff"
-                    stroke-width="2"
+          <div class="row">
+            <div class="team__text col-md-8 col-lg-5">
+              <h2 class="text-white font-weight-normal">
+                Small team, big ideas
+              </h2>
+              <a href="#" class="btn-dark mt-5">
+                About Us &nbsp;
+                <span
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="26"
+                    height="20"
                   >
-                    <path d="M15 1l9 9-9 9M0 10h24" />
-                  </g></svg></span
-            ></a>
+                    <g
+                      id="hero__arrow"
+                      fill="none"
+                      fill-rule="evenodd"
+                      stroke="#fff"
+                      stroke-width="2"
+                    >
+                      <path d="M15 1l9 9-9 9M0 10h24" />
+                    </g></svg></span
+              ></a>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- end Team Section -->
+      </section>
+      <!-- end Team Section -->
 
-    <!-- Feature Section -->
-    <section class="features">
-      <div class="container">
-        <div
-          class="features__content row align-items-center justify-content-between"
-        >
-          <h2 class="font-weight-normal">Featured</h2>
+      <!-- Feature Section -->
+      <section class="features">
+        <div class="container">
           <div
-            class="features__content__desc row align-items-center justify-content-between"
+            class="features__content row align-items-center justify-content-between"
           >
-            <div class="desc__image col-lg-4">
-              <div class="desc__image__img img-overlay-static">
-                <img
-                  src="assets/portfolio/desktop/image-del-sol.jpg"
-                  alt="del-sol"
-                  id="feature__img-1"
-                  class="w-100"
-                />
+            <h2 class="font-weight-normal">Featured</h2>
+            <div
+              class="features__content__desc row align-items-center justify-content-between"
+            >
+              <div class="desc__image col-lg-4">
+                <div class="desc__image__img img-overlay-static">
+                  <img
+                    src="assets/portfolio/desktop/image-del-sol.jpg"
+                    alt="del-sol"
+                    id="feature__img-1"
+                    class="w-100"
+                  />
+                </div>
+                <div class="feature__no">
+                  <h1 class="h1-l text-lighter font-weight-normal">1</h1>
+                </div>
+                <div class="feature__detail">
+                  <h3 class="text-white">Project Del Sol</h3>
+                  <a href="#" class="text-lighter">View All Projects</a>
+                </div>
               </div>
-              <div class="feature__no">
-                <h1 class="h1-l text-lighter font-weight-normal">1</h1>
+              <div class="desc__image col-lg-4">
+                <div class="desc__image__img img-overlay-static">
+                  <img
+                    src="assets/portfolio/desktop/image-228b.jpg"
+                    alt="228b"
+                    id="feature__img-2"
+                    class="w-100"
+                  />
+                </div>
+                <div class="feature__no">
+                  <h1 class="h1-l text-lighter font-weight-normal">2</h1>
+                </div>
+                <div class="feature__detail">
+                  <h3 class="text-white">228B Tower</h3>
+                  <a href="#" class="text-lighter">View All Projects</a>
+                </div>
               </div>
-              <div class="feature__detail">
-                <h3 class="text-white">Project Del Sol</h3>
-                <a href="#" class="text-lighter">View All Projects</a>
+              <div class="desc__image col-lg-4">
+                <div class="desc__images__img img-overlay-static">
+                  <img
+                    src="assets/portfolio/desktop/image-prototype.jpg"
+                    alt="Prototype"
+                    id="feature__img-3"
+                    class="w-100"
+                  />
+                </div>
+                <div class="feature__no">
+                  <h1 class="h1-l text-lighter font-weight-normal">3</h1>
+                </div>
+                <div class="feature__detail">
+                  <h3 class="text-white">Le Prototype</h3>
+                  <a href="#" class="text-lighter">View All Projects</a>
+                </div>
               </div>
             </div>
-            <div class="desc__image col-lg-4">
-              <div class="desc__image__img img-overlay-static">
-                <img
-                  src="assets/portfolio/desktop/image-228b.jpg"
-                  alt="228b"
-                  id="feature__img-2"
-                  class="w-100"
-                />
-              </div>
-              <div class="feature__no">
-                <h1 class="h1-l text-lighter font-weight-normal">2</h1>
-              </div>
-              <div class="feature__detail">
-                <h3 class="text-white">228B Tower</h3>
-                <a href="#" class="text-lighter">View All Projects</a>
-              </div>
-            </div>
-            <div class="desc__image col-lg-4">
-              <div class="desc__images__img img-overlay-static">
-                <img
-                  src="assets/portfolio/desktop/image-prototype.jpg"
-                  alt="Prototype"
-                  id="feature__img-3"
-                  class="w-100"
-                />
-              </div>
-              <div class="feature__no">
-                <h1 class="h1-l text-lighter font-weight-normal">3</h1>
-              </div>
-              <div class="feature__detail">
-                <h3 class="text-white">Le Prototype</h3>
-                <a href="#" class="text-lighter">View All Projects</a>
-              </div>
-            </div>
-          </div>
-          <a href="#" class="btn-dark featured__btn">
-            See all &nbsp;
-            <span
-              ><svg xmlns="http://www.w3.org/2000/svg" width="26" height="20">
-                <g
-                  id="hero__arrow"
-                  fill="none"
-                  fill-rule="evenodd"
-                  stroke="#fff"
-                  stroke-width="2"
-                >
-                  <path d="M15 1l9 9-9 9M0 10h24" />
-                </g></svg></span
-          ></a>
-        </div>
-      </div>
-    </section>
-    <!-- end Feature Section -->
-
-    <!-- Footer Section -->
-    <footer class="footer">
-      <div class="container container-sm-fluid container-md-fluid">
-        <div class="footer__content">
-          <div class="footer__logo">
-            <div class="footer__logo__svg">
-              <svg xmlns="http://www.w3.org/2000/svg" width="97" height="40">
-                <path
-                  fill="#fff"
-                  d="M10.822 39.27l2.26-6.256h13.836l2.26 6.255H40L24.658 1.6h-9.316L0 39.268h10.822zM23.493 24.2h-6.986L20 15.252l3.493 8.95zm21.804 15.07V27.807c0-.776.22-1.499.662-2.169a5.14 5.14 0 011.746-1.632A4.51 4.51 0 0150 23.379c.64 0 1.343.13 2.112.388.769.259 1.434.601 1.998 1.028l3.972-7.991c-.654-.487-1.484-.883-2.488-1.188-1.005-.304-1.956-.456-2.854-.456-1.385 0-2.729.354-4.03 1.061-1.301.708-2.44 1.694-3.413 2.957V15.89h-9.498v23.38h9.498zm18.995.73c1.507 0 2.942-.21 4.304-.628 1.362-.418 2.439-.91 3.23-1.472l-3.105-6.393c-.289.198-.688.377-1.198.536-.51.16-1.07.24-1.678.24-.99 0-1.85-.217-2.58-.65a4.449 4.449 0 01-1.678-1.724 4.806 4.806 0 01-.582-2.33c0-.669.163-1.369.49-2.1.328-.73.845-1.347 1.553-1.849s1.625-.753 2.751-.753c1.187 0 2.161.258 2.922.776l3.105-6.393c-.76-.578-1.841-1.073-3.242-1.484a15.324 15.324 0 00-4.337-.616c-1.903 0-3.665.346-5.286 1.039-1.62.692-3.029 1.628-4.224 2.808a13.053 13.053 0 00-2.785 3.995 11.177 11.177 0 00-.993 4.6c0 1.69.354 3.285 1.062 4.784.707 1.5 1.678 2.82 2.91 3.961a13.79 13.79 0 004.258 2.683c1.606.647 3.307.97 5.103.97zm14.703-.73V26.392c0-.792.16-1.477.48-2.055a3.374 3.374 0 011.347-1.347c.578-.32 1.248-.48 2.01-.48 1.156 0 2.084.354 2.784 1.062.7.708 1.05 1.648 1.05 2.82v12.876h9.498V24.338c0-1.75-.41-3.314-1.232-4.692a9.088 9.088 0 00-3.345-3.276c-1.408-.807-3.003-1.21-4.783-1.21-1.4 0-2.782.255-4.144.765a12.064 12.064 0 00-3.665 2.157V0h-9.497v39.27h9.497z"
-                />
-              </svg>
-            </div>
-          </div>
-          <div class="footer__links">
-            <a href="portfolio.html">Portfolio</a>
-            <a href="about.html">About Us</a>
-            <a href="contact.html">Contact</a>
-          </div>
-          <div class="footer__btn">
-            <a href="#" class="btn-dark footer__btn"
-              >See Our Portfolio &nbsp;
+            <a href="#" class="btn-dark featured__btn">
+              See all &nbsp;
               <span
                 ><svg xmlns="http://www.w3.org/2000/svg" width="26" height="20">
                   <g
@@ -283,14 +263,60 @@
             ></a>
           </div>
         </div>
-      </div>
-    </footer>
+      </section>
+      <!-- end Feature Section -->
 
-    <!-- end Footer Section -->
+      <!-- Footer Section -->
+      <footer class="footer">
+        <div class="container container-sm-fluid container-md-fluid">
+          <div class="footer__content">
+            <div class="footer__logo">
+              <div class="footer__logo__svg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="97" height="40">
+                  <path
+                    fill="#fff"
+                    d="M10.822 39.27l2.26-6.256h13.836l2.26 6.255H40L24.658 1.6h-9.316L0 39.268h10.822zM23.493 24.2h-6.986L20 15.252l3.493 8.95zm21.804 15.07V27.807c0-.776.22-1.499.662-2.169a5.14 5.14 0 011.746-1.632A4.51 4.51 0 0150 23.379c.64 0 1.343.13 2.112.388.769.259 1.434.601 1.998 1.028l3.972-7.991c-.654-.487-1.484-.883-2.488-1.188-1.005-.304-1.956-.456-2.854-.456-1.385 0-2.729.354-4.03 1.061-1.301.708-2.44 1.694-3.413 2.957V15.89h-9.498v23.38h9.498zm18.995.73c1.507 0 2.942-.21 4.304-.628 1.362-.418 2.439-.91 3.23-1.472l-3.105-6.393c-.289.198-.688.377-1.198.536-.51.16-1.07.24-1.678.24-.99 0-1.85-.217-2.58-.65a4.449 4.449 0 01-1.678-1.724 4.806 4.806 0 01-.582-2.33c0-.669.163-1.369.49-2.1.328-.73.845-1.347 1.553-1.849s1.625-.753 2.751-.753c1.187 0 2.161.258 2.922.776l3.105-6.393c-.76-.578-1.841-1.073-3.242-1.484a15.324 15.324 0 00-4.337-.616c-1.903 0-3.665.346-5.286 1.039-1.62.692-3.029 1.628-4.224 2.808a13.053 13.053 0 00-2.785 3.995 11.177 11.177 0 00-.993 4.6c0 1.69.354 3.285 1.062 4.784.707 1.5 1.678 2.82 2.91 3.961a13.79 13.79 0 004.258 2.683c1.606.647 3.307.97 5.103.97zm14.703-.73V26.392c0-.792.16-1.477.48-2.055a3.374 3.374 0 011.347-1.347c.578-.32 1.248-.48 2.01-.48 1.156 0 2.084.354 2.784 1.062.7.708 1.05 1.648 1.05 2.82v12.876h9.498V24.338c0-1.75-.41-3.314-1.232-4.692a9.088 9.088 0 00-3.345-3.276c-1.408-.807-3.003-1.21-4.783-1.21-1.4 0-2.782.255-4.144.765a12.064 12.064 0 00-3.665 2.157V0h-9.497v39.27h9.497z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="footer__links">
+              <a href="portfolio.html">Portfolio</a>
+              <a href="about.html">About Us</a>
+              <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer__btn">
+              <a href="#" class="btn-dark footer__btn"
+                >See Our Portfolio &nbsp;
+                <span
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="26"
+                    height="20"
+                  >
+                    <g
+                      id="hero__arrow"
+                      fill="none"
+                      fill-rule="evenodd"
+                      stroke="#fff"
+                      stroke-width="2"
+                    >
+                      <path d="M15 1l9 9-9 9M0 10h24" />
+                    </g></svg></span
+              ></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <!-- end Footer Section -->
+    </div>
 
     <script src="libs/jquery/jquery.min.js"></script>
     <script src="libs/bootstrap/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
     <script src="js/nav.js"></script>
     <script src="js/main.js"></script>
   </body>

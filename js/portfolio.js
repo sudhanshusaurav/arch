@@ -16,3 +16,8 @@ portfolio_images.forEach((img) => {
     img.src = path;
   }
 });
+
+const scroll = new LocomotiveScroll({
+  el: document.querySelector(".scroll__linear"),
+  smooth: true,
+});
