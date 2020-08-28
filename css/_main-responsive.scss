@@ -99,6 +99,10 @@
       &__text {
         padding-right: 0;
 
+        h2 {
+          font-weight: 700 !important;
+        }
+
         p {
           margin-top: 2.5rem;
         }
@@ -124,14 +128,23 @@
   .team {
     &__text {
       left: 0;
-      padding-right: 7rem;
-      padding-left: 2rem;
+      padding: 0 2rem;
+
+      h2 {
+        font-weight: 700 !important;
+      }
     }
   }
   /* end team section */
 
   /* features section */
   .features {
+    &__content {
+      h2 {
+        font-weight: 700 !important;
+      }
+    }
+
     &__content__desc {
       margin-top: 0;
     }

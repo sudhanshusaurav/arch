@@ -5,6 +5,7 @@
   .menu {
     height: 100%;
     position: relative;
+    animation: menu 1.5s ease-out;
 
     &__bar {
       &__items {
@@ -36,6 +37,7 @@
       }
     }
   }
+
   &__page {
     position: absolute;
     left: 0;
@@ -61,6 +63,15 @@
         transform: translateY(-50%);
       }
     }
+  }
+}
+
+@keyframes menu {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 

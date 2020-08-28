@@ -148,7 +148,32 @@ if (sm.matches) {
 }
 /* end features section */
 
-const locoScroll = new LocomotiveScroll({
-  el: document.querySelector(".scroll__linear"),
-  smooth: true,
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.from(".display", {
+  duration: 1,
+  opacity: 0,
+  ease: "power2.out",
+  scrollTrigger: { trigger: ".display", start: "top center" },
+});
+
+gsap.from(".team", {
+  duration: 1,
+  opacity: 0,
+  ease: "power2.out",
+  scrollTrigger: { trigger: ".team", start: "top center" },
+});
+
+gsap.from(".features", {
+  duration: 1,
+  opacity: 0,
+  ease: "power2.out",
+  scrollTrigger: { trigger: ".features", start: "top center" },
+});
+
+gsap.from(".footer", {
+  duration: 1,
+  opacity: 0,
+  ease: "power2.out",
+  scrollTrigger: { trigger: ".footer", start: "top bottom" },
 });

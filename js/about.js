@@ -12,7 +12,25 @@ if (sm.matches) {
   hero.src = "assets/about/desktop/image-hero.jpg";
 }
 
-const scroll = new LocomotiveScroll({
-  el: document.querySelector(".scroll__linear"),
-  smooth: true,
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.from(".heritage", {
+  duration: 1,
+  opacity: 0,
+  ease: "power2.out",
+  scrollTrigger: { trigger: ".heritage", start: "top center" },
+});
+
+gsap.from(".leader", {
+  duration: 1,
+  opacity: 0,
+  ease: "power2.out",
+  scrollTrigger: { trigger: ".leader", start: "top center" },
+});
+
+gsap.from(".footer", {
+  duration: 1,
+  opacity: 0,
+  ease: "power2.out",
+  scrollTrigger: { trigger: ".footer", start: "top bottom" },
 });

@@ -146,10 +146,24 @@ a:focus {
   }
 }
 
+.hero {
+  animation: hero 1.5s ease-out;
+}
+
+@keyframes hero {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .hero__ts {
   position: relative;
   margin-bottom: $m-l;
   overflow-x: hidden;
+
   .hero__content {
     &__text {
       position: absolute;

@@ -26,11 +26,6 @@ if (sm.matches) {
 }
 /* end map section */
 
-const scroll = new LocomotiveScroll({
-  el: document.querySelector(".scroll__linear"),
-  smooth: true,
-});
-
 /* contact form validation */
 
 const name = document.querySelector("#name");
@@ -95,3 +90,33 @@ function setSuccessFor(input) {
   const formGroup = input.parentElement;
   formGroup.classList.remove("form-group-error");
 }
+
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.from(".contact", {
+  duration: 1,
+  opacity: 0,
+  ease: "power2.out",
+  scrollTrigger: { trigger: ".contact", start: "top center" },
+});
+
+gsap.from(".map", {
+  duration: 1,
+  opacity: 0,
+  ease: "power2.out",
+  scrollTrigger: { trigger: ".map", start: "top center" },
+});
+
+gsap.from(".connect", {
+  duration: 1,
+  opacity: 0,
+  ease: "power2.out",
+  scrollTrigger: { trigger: ".connect", start: "top center" },
+});
+
+gsap.from(".footer", {
+  duration: 1,
+  opacity: 0,
+  ease: "power2.out",
+  scrollTrigger: { trigger: ".footer", start: "top bottom" },
+});

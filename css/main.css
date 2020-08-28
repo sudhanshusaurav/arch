@@ -149,6 +149,29 @@ a:focus {
           clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
+.hero {
+  -webkit-animation: hero 1.5s ease-out;
+          animation: hero 1.5s ease-out;
+}
+
+@-webkit-keyframes hero {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes hero {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .hero__ts {
   position: relative;
   margin-bottom: 6.25rem;
@@ -259,6 +282,8 @@ a:focus {
 .header .menu {
   height: 100%;
   position: relative;
+  -webkit-animation: menu 1.5s ease-out;
+          animation: menu 1.5s ease-out;
 }
 
 .header .menu__bar__items {
@@ -318,6 +343,24 @@ a:focus {
   bottom: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+}
+
+@-webkit-keyframes menu {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes menu {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @media (max-width: 991.98px) {
@@ -509,7 +552,7 @@ a:focus {
     height: 8rem;
     width: 100%;
     position: static;
-    margin-left: 1.5rem;
+    margin-left: 2rem;
     margin-top: 2.5rem;
     -webkit-transform: translateY(0) translateX(0);
             transform: translateY(0) translateX(0);
@@ -604,7 +647,7 @@ a:focus {
 .team__text {
   position: absolute;
   top: 50%;
-  left: 11.5rem;
+  left: 22rem;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
@@ -733,6 +776,9 @@ a:focus {
   .display__content__text {
     padding-right: 0;
   }
+  .display__content__text h2 {
+    font-weight: 700 !important;
+  }
   .display__content__text p {
     margin-top: 2.5rem;
   }
@@ -752,11 +798,16 @@ a:focus {
   /* team section */
   .team__text {
     left: 0;
-    padding-right: 7rem;
-    padding-left: 2rem;
+    padding: 0 2rem;
+  }
+  .team__text h2 {
+    font-weight: 700 !important;
   }
   /* end team section */
   /* features section */
+  .features__content h2 {
+    font-weight: 700 !important;
+  }
   .features__content__desc {
     margin-top: 0;
   }

@@ -17,7 +17,22 @@ portfolio_images.forEach((img) => {
   }
 });
 
-const scroll = new LocomotiveScroll({
-  el: document.querySelector(".scroll__linear"),
-  smooth: true,
+gsap.registerPlugin(ScrollTrigger);
+
+const portfolioContent = document.querySelectorAll(".portfolio__content");
+
+portfolioContent.forEach((pc) => {
+  gsap.from(pc, {
+    duration: 1,
+    opacity: 0,
+    ease: "power2.out",
+    scrollTrigger: { trigger: pc, start: "top center" },
+  });
+});
+
+gsap.from(".footer", {
+  duration: 1,
+  opacity: 0,
+  ease: "power2.out",
+  scrollTrigger: { trigger: ".footer", start: "top bottom" },
 });
