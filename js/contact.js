@@ -30,3 +30,68 @@ const scroll = new LocomotiveScroll({
   el: document.querySelector(".scroll__linear"),
   smooth: true,
 });
+
+/* contact form validation */
+
+const name = document.querySelector("#name");
+const email = document.querySelector("#email");
+const message = document.querySelector("#message");
+const formGroups = document.querySelectorAll(".form-group");
+
+const re = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+
+function checkInputs() {
+  const u_name = name.value.trim();
+  const u_email = email.value.trim();
+  const u_messagge = message.value.trim();
+
+  if (u_name === "") {
+    setErrorFor(name, "can't be empty");
+  } else {
+    setSuccessFor(name);
+  }
+
+  if (u_email === "") {
+    setErrorFor(email, "can't be empty");
+  } else if (!re.test(u_email)) {
+    setErrorFor(email, "invalid email");
+  } else {
+    setSuccessFor(email);
+  }
+
+  if (u_messagge === "") {
+    setErrorFor(message, "can't be empty");
+  } else {
+    setSuccessFor(message);
+  }
+
+  let flag = 0;
+  formGroups.forEach((fg) => {
+    if (fg.classList.contains("form-group-error")) {
+      flag = 1;
+    }
+  });
+
+  if (flag == 0) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+const nameError = document.querySelector("#name__error");
+const emailError = document.querySelector("#email__error");
+const messageError = document.querySelector("#message__error");
+
+function setErrorFor(input, message) {
+  const formGroup = input.parentElement;
+  const formText = formGroup.querySelector(".form-text");
+
+  formText.innerHTML = message;
+  formGroup.classList.add("form-group-error");
+}
+
+function setSuccessFor(input) {
+  const formGroup = input.parentElement;
+  formGroup.classList.remove("form-group-error");
+}

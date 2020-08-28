@@ -1,3 +1,13 @@
+/* page title */
+gsap.from(".header__page__title", {
+  y: -500,
+  opacity: 0,
+  duration: 1,
+  delay: 0.5,
+  ease: "elastic",
+});
+/* end page title */
+
 /* Navigation */
 
 const burger = document.querySelector(".menu__burger");

@@ -74,7 +74,12 @@ h3 {
 }
 
 .btn-light:focus {
+  color: white;
   background: #1b1d23;
+}
+
+.btn-light:focus #light__btn__arrow {
+  stroke: white;
 }
 
 a {

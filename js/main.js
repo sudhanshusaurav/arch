@@ -148,7 +148,7 @@ if (sm.matches) {
 }
 /* end features section */
 
-const scroll = new LocomotiveScroll({
+const locoScroll = new LocomotiveScroll({
   el: document.querySelector(".scroll__linear"),
   smooth: true,
 });

@@ -74,7 +74,12 @@ h3 {
 }
 
 .btn-light:focus {
+  color: white;
   background: #1b1d23;
+}
+
+.btn-light:focus #light__btn__arrow {
+  stroke: white;
 }
 
 a {
@@ -558,6 +563,7 @@ a:focus {
 /* connect section */
 .connect {
   margin: 6.25rem 0;
+  /* end connect section */
 }
 
 .connect__content__form form {
@@ -584,6 +590,17 @@ a:focus {
   visibility: hidden;
 }
 
+.connect__content__form form .form-group-error input,
+.connect__content__form form .form-group-error textarea {
+  border: none;
+  border-bottom: 2px solid red !important;
+  border-radius: 0;
+}
+
+.connect__content__form form .form-group-error .form-text {
+  visibility: visible;
+}
+
 .connect__content__form form .form-btn {
   position: absolute;
   right: 0;
@@ -591,38 +608,39 @@ a:focus {
   border: none;
 }
 
-/* end connect section */
 @media (max-width: 991.98px) {
-  /* contact section */
-  .contact {
+  .connect {
+    /* contact section */
+    /* end contact section */
+  }
+  .connect .contact {
     margin: 6.25rem 0;
   }
-  .contact__content__heading {
+  .connect .contact__content__heading {
     margin-bottom: 2rem;
   }
-  .contact__content__address {
+  .connect .contact__content__address {
     margin-bottom: 2rem;
   }
-  .contact__content__address td {
+  .connect .contact__content__address td {
     padding-left: 0;
   }
-  .contact__content__address .btn-map {
+  .connect .contact__content__address .btn-map {
     margin-left: 5rem;
   }
-  /* end contact section */
-  form {
+  .connect form {
     margin-top: 1rem;
   }
 }
 
 @media (max-width: 575.98px) {
-  .btn-map {
+  .connect .btn-map {
     margin-left: 0 !important;
   }
-  .contact__content__heading h2 {
+  .connect .contact__content__heading h2 {
     font-weight: 700 !important;
   }
-  .connect__content__heading h2 {
+  .connect .connect__content__heading h2 {
     font-weight: 700 !important;
   }
 }

@@ -73,7 +73,12 @@ h3 {
   }
 
   &:focus {
+    color: white;
     background: $dark-blue;
+  }
+
+  &:focus #light__btn__arrow {
+    stroke: white;
   }
 }
 
