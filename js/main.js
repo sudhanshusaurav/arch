@@ -76,8 +76,6 @@ function changeSlide() {
   });
 }
 
-changeSlide();
-
 function activeSlide() {
   if (slide_1.classList.contains("indicator-active")) {
     slide_1.classList.remove("indicator-active");
